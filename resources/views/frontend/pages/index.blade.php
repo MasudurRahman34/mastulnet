@@ -31,7 +31,7 @@
                         </div>
                     </div>
                     @endforeach
-                    <div class="dis_cell col-lg-3 col-md-3 col-sm-6 col-xs-6 full_width_599">
+                   {{--  <div class="dis_cell col-lg-3 col-md-3 col-sm-6 col-xs-6 full_width_599">
                         <div class="our_course_item border_rad_5">
                             <a href="mobile_app_design.html">
                                 <img src="images/mobile_app.jpg" alt="course">
@@ -114,7 +114,7 @@
                                 <a href="animation.html"><i class="icofont-rounded-right"></i> 20 Class & Resource</a>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

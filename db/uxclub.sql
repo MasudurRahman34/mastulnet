@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.8.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 06, 2019 at 06:27 AM
--- Server version: 10.1.36-MariaDB
--- PHP Version: 7.2.11
+-- Generation Time: May 11, 2019 at 11:42 AM
+-- Server version: 10.1.37-MariaDB
+-- PHP Version: 7.3.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -30,9 +30,23 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `admins` (
   `id` int(10) UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `phone_number` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `role` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'super admin',
+  `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `admins`
+--
+
+INSERT INTO `admins` (`id`, `name`, `email`, `password`, `image`, `phone_number`, `role`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'Asif Reaz', 'adminmastul@gmail.com', '$2y$12$3ft4ivvctzS1MaI6buBq.uO85axMHqZgK7SO9sTebBijdCig92ZEy', NULL, NULL, 'super admin', 'aEfyKuMIFgakuVfgX9d3Ivily4jbrtnWwmyMlLOTkoydlXfHZCXKjquHS4i7', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -72,6 +86,7 @@ CREATE TABLE `courseitems` (
   `course_name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `title` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Course title',
   `description` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'Course title',
+  `imagefile` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `slug` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
@@ -81,9 +96,11 @@ CREATE TABLE `courseitems` (
 -- Dumping data for table `courseitems`
 --
 
-INSERT INTO `courseitems` (`id`, `course_name`, `title`, `description`, `slug`, `created_at`, `updated_at`) VALUES
-(1, 'UI/UX Designer', 'Become a UI/UX Designer', 'UI UX Design Master Course with Live Support', 'UI-UX-Designer', NULL, NULL),
-(2, 'Mobile App Designer', 'Become a Mobile App Designer', 'Mobile App Design Course with Live Support', 'Mobile-App-Designer', NULL, NULL);
+INSERT INTO `courseitems` (`id`, `course_name`, `title`, `description`, `imagefile`, `slug`, `created_at`, `updated_at`) VALUES
+(3, 'Jannatul Ferdous', 'Age 9 years | | Dream polish', 'She is child of a Risksha-pullar', '1557554134.jpg', 'jannatul-ferdous', '2019-05-10 23:55:34', '2019-05-10 23:55:34'),
+(4, 'MD Arman', 'Age 10 years | | Dream Doctor', 'i\'am very poor, Please Sponsor Me', '1557564136.jpg', 'md-arman', '2019-05-11 02:42:16', '2019-05-11 02:42:16'),
+(5, 'MD Mojahidul Islam', 'Age 11 years | | Dream Cricketer', 'Sponsor me', '1557565051.jpg', 'md-mojahidul-islam', '2019-05-11 02:57:31', '2019-05-11 02:57:31'),
+(6, 'jamal udding', 'Age 8 years | | Dream Doctor', 'please sponser me', '1557566562.JPG', 'jamal-udding', '2019-05-11 03:22:42', '2019-05-11 03:22:42');
 
 -- --------------------------------------------------------
 
@@ -190,6 +207,13 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'webmastul', 'webmastul@gmail.com', NULL, '$2y$10$zVnWjsvh5HYYgOLZbEBu3OEWVi5B0SAT3kflcggDIztYk8mtZL9DC', 'IdRXOByOVHQoo4GlQGKWAqwQiumg346JxkiA5a1DFKNCg8ExepH0G2k7kYCD', '2019-05-10 23:22:18', '2019-05-10 23:22:18');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -251,7 +275,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `admins`
 --
 ALTER TABLE `admins`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `coursefiles`
@@ -263,7 +287,7 @@ ALTER TABLE `coursefiles`
 -- AUTO_INCREMENT for table `courseitems`
 --
 ALTER TABLE `courseitems`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `members`
@@ -287,7 +311,7 @@ ALTER TABLE `stories`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
