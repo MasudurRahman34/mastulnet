@@ -306,12 +306,31 @@ textarea::-webkit-input-placeholder{
     overflow: hidden;
     max-height: 210px;
 }
-.article_details{
+
+.article2{
+    overflow: hidden;
+}
+.article2 img{
+    position: relative;
+    display: block;
+    margin:0px auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden
+}
+.article_details2{
     padding: 25px 15px;
+    margin:0px auto;
 }
-.article_details p{
+.article_details2 p{
     margin-top: 10px;
+    text-align: center;
 }
+.article_details2 h3{
+    text-align: center;
+}
+
 /**Emergency artical css end**/
 /**Footer css start**/
 footer{
