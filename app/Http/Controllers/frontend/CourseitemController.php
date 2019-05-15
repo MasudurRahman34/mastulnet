@@ -21,9 +21,17 @@ class CourseitemController extends Controller
     public function index()
     {
         
-        $courseitem=courseitem::orderBy('id', 'desc')->get();
+        $courseitem=courseitem::orderBy('id', 'desc')->paginate(4);
         return view('frontend.pages.index')->with('courseitem',$courseitem); 
     }
+
+    public function childgallery()
+    {
+        
+        $courseitems=courseitem::orderBy('id', 'desc')->paginate(4);
+        return view('frontend.pages.childgallery')->with('courseitems',$courseitems); 
+    }
+
 
     /**
      * Show the form for creating a new resource.

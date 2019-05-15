@@ -17,6 +17,7 @@
 /*fronend routes*/
 Route::get('/mastulnet', 'frontend\CourseitemController@index')->name('mastulnet');
 Route::get('/singlecourse/{slug}', 'frontend\CourseitemController@show')->name('singlecourse.show');
+Route::get('/childgallery', 'frontend\CourseitemController@childgallery')->name('childgallery');
 Route::get('/members', 'frontend\MembersController@index')->name('members');
 Route::get('/story', 'frontend\StoryController@index')->name('story');
 Route::get('/contact', 'frontend\contactController@index')->name('contact');

@@ -29,90 +29,6 @@
                 </div>
             </div>
             @endforeach
-                   {{--  <div class="dis_cell col-lg-3 col-md-3 col-sm-6 col-xs-6 full_width_599">
-                        <div class="our_course_item border_rad_5">
-                            <a href="mobile_app_design.html">
-                                <img src="images/mobile_app.jpg" alt="course">
-                            </a>
-                            <div class="caption">
-                                <h3 class="bold font_s_20">Become a Mobile App Designer</h3>
-                                <p>Mobile App Design Course with Live Support</p>
-                                <a href="mobile_app_design.html"><i class="icofont-rounded-right"></i> 20 Class & Resource</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dis_cell col-lg-3 col-md-3 col-sm-6 col-xs-6 full_width_599">
-                        <div class="our_course_item border_rad_5">
-                            <a href="experience design.html">
-                                <img src="images/adobe_xd.jpg" alt="course">
-                            </a>
-                            <div class="caption">
-                                <h3 class="bold font_s_20">Learn Adobe XD Easily*</h3>
-                                <p>Adobe Experience Design (XD)for Good Skill on UX UI Design with  Live Support, </p>
-                                <a href="experience design.html"><i class="icofont-rounded-right"></i> 20 Class & Resource</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dis_cell col-lg-3 col-md-3 col-sm-6 col-xs-6 full_width_599">
-                        <div class="our_course_item border_rad_5">
-                            <a href="graphic_design.html">
-                                <img src="images/graphic_designer.jpg" alt="course">
-                            </a>
-                            <div class="caption">
-                                <h3 class="bold font_s_20">Graphic Design Course for Begenner</h3>
-                                <p>Graphic & Creative Design Master Course with  Live Support</p>
-                                <a href="graphic_design.html"><i class="icofont-rounded-right"></i> 20 Class & Resource</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dis_cell col-lg-3 col-md-3 col-sm-6 col-xs-6 full_width_599">
-                        <div class="our_course_item border_rad_5">
-                            <a href="useability.html">
-                                <img src="images/user_reserce.jpg" alt="course">
-                            </a>
-                            <div class="caption">
-                                <h3 class="bold font_s_20">User Research & Usability*</h3>
-                                <p>User Experience Guide for<br>UX UI Designer<br> with  Live Support</p>
-                                <a href="useability.html"><i class="icofont-rounded-right"></i> 20 Class & Resource</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dis_cell col-lg-3 col-md-3 col-sm-6 col-xs-6 full_width_599">
-                        <div class="our_course_item border_rad_5">
-                            <a href="design_principle.html">
-                                <img src="images/color_principle.jpg" alt="course">
-                            </a>
-                            <div class="caption">
-                                <h3 class="bold font_s_20">Design principles, Color theories & trends</h3>
-                                <p>Adobe Experience Design (XD)for Good Skill on UX UI Design</p>
-                                <a href="design_principle.html"><i class="icofont-rounded-right"></i> 20 Class & Resource</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dis_cell col-lg-3 col-md-3 col-sm-6 col-xs-6 full_width_599">
-                        <div class="our_course_item border_rad_5">
-                            <a href="business_information.html">
-                                <img src="images/bussiness_info.jpg" alt="course">
-                            </a>
-                            <div class="caption">
-                                <h3 class="bold font_s_20">Business & Information Design Course</h3>
-                                <p>Important for Business Person, Entrepreneur & Professional</p>
-                                <a href="business_information.html"><i class="icofont-rounded-right"></i> 20 Class & Resource</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dis_cell col-lg-3 col-md-3 col-sm-6 col-xs-6 full_width_599">
-                        <div class="our_course_item border_rad_5">
-                            <a href="animation.html">
-                                <img src="images/animation.jpg" alt="course">
-                            </a>
-                            <div class="caption">
-                                <h3 class="bold font_s_20">Learn UI Animation</h3>
-                                <p>Adobe Experience Design (XD)for Good Skill on UX UI Design with  Live Support,</p>
-                                <a href="animation.html"><i class="icofont-rounded-right"></i> 20 Class & Resource</a>
-                            </div>
-                        </div>
-                    </div> --}}
                 </div>
             </div>
         </div>
@@ -205,7 +121,6 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 full_width_599">
                         <a href="#">
                             <div class="article2 border_rad_5">
-
                                 <img src="images/article_1.jpg" alt="img">
                                 <div class="article_details2 bg_white" style="text-align: center;">
                                     <h3 class="font_s_20">Antory islam (CEO)</h3> 
