@@ -2,7 +2,80 @@
 
 @section('content')
 
-<div class="single_course">
+
+<section class="section-separator">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section_heading text-center">
+                            <h2>Sponsor a Child in need</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque laboriosam esse assumenda dolorem qui quo illo commodi minus sapiente ad!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 text-center">
+                        <div class="child_profile">
+                            <img src="{{ asset('images/courseimage/'.$courseitem->imagefile)}}" alt="" height="200px" width="200px">
+                            <button class="btn btn-primary btn-sm page-btn">Sponor me</button>
+                            <h4>{{$courseitem->course_name}}</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="child_profile_info fix-padding">
+                                    <button class="btn btn-primary btn-sm page-btn">Child Say's</button>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <div class="red_moor_btn text-right">
+                                        <a href="#">red more...</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="child_profile_info">
+                                    <button class="btn btn-primary btn-sm page-btn">Personal info</button>
+                                    <div class="personal-info clearfix">
+                                        <div>
+                                            <p>Birth Day</p>
+                                            <p>Age</p>
+                                            <p>Id</p>
+                                            <p>Place</p>
+                                        </div>
+                                        <div id="border-left">
+                                            <p>2002-12-27</p>
+                                            <p>10 years</p>
+                                            <p>28172</p>
+                                            <p>Bangladesh</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="child_profile_info">
+                                    <button class="btn btn-primary btn-sm page-btn">Dream</button>
+                                    <div class="personal-info">
+                                        <h4>Police</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="child_profile_info personal-info-img">
+                                    <button class="btn btn-primary btn-sm page-btn">Video</button>
+                                    <div class="personal-info">
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-md-offset-5"><button class="btn_cus join_us clr_white bg_red border_none border_circle bold text-uppercase full_width_480" data-toggle="modal" data-target=".bs-example-modal-lg">Donate Now</button></div>
+
+                </div>
+            </div>
+        </section>
+
+{{-- <div class="single_course">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-8" style="margin-top: 10px">
@@ -41,14 +114,14 @@
 
                             @guest
                             <button class="border_none clr_white font_s_20 text-center border_circle" data-toggle="modal" data-target=".bs-example-modal-lg">Donate Now <i class="icofont-rounded-right"></i></button>
-                            @endguest
+                            @endguest --}}
 
 
                           {{-- {{ (isset(Auth::user()->name)) ? Auth::user()->name : 'Profile' }} --}}
                                  
                         
                            
-                        </div>
+                        {{-- </div>
                     </div>
                 </div>
             </div>
@@ -286,5 +359,5 @@
                 </div>
             </div>
         </div>
-
+ --}}
 @endsection

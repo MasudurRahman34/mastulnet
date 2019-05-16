@@ -217,15 +217,29 @@ textarea::-webkit-input-placeholder{
 /**Header css end**/
 /**Header banner css start**/
 .header_banner{
-    padding: 70px 0px;
+    
+    padding: 200px 0px;
+background: url('../images/Header_banner.jpg') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    /*padding: 100px 0px;*/
+}
+.header_banner .container{
+     
 }
 .header_banner h1{
     font-size: 60px;
+    color:#ffffff;
+    padding-right:100px; 
 }
 /**Header banner css end**/
 /**Our courses css start**/
 .our_courses{
     padding: 60px 0px 30px 0px;
+
+
 }
 .our_course_item{
     margin-bottom: 30px;
@@ -423,6 +437,248 @@ max-height: 275px;
 .list-group-item{
    padding: 4px 15px;
 }
+/*single child*/
+.section-separator{
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.child_profile img {
+          font-size: 200px;
+          width: 200px;
+          border-radius: 50%;
+          border: 1px solid #9c9c9c;
+          padding: 2px;
+          display: block;
+          margin: 0 auto;
+          margin-bottom: 5px;
+        }
+        .page-btn {
+          outline: none;
+          border: none;
+          border-radius: 30px;
+          padding: 7px 15px;
+          display: inline-block;
+          font-size: 14px;
+          font-weight: 400;
+          color: #fff;
+        }
+        .child_profile .page-btn {
+          padding: 2px 10px !important;
+        }
+        .child_profile h4 {
+          font-size: 24px;
+          font-weight: 600;
+          margin-top: 5px;
+        }
+        .section_heading h2 {
+          font-size: 32px;
+          font-weight: 400;
+          color: #1771bf;
+          font-style: italic;
+          margin-bottom: 12px;
+        }
+        .section_heading {
+          font-size: 16px;
+          font-weight: 400;
+          color: #847d7a;
+          line-height: 22px;
+          margin-bottom: 36px;
+        }
+        .child_profile_info {
+          text-align: center;
+          border: 2px solid #1771bf;
+          border-radius: 10px;
+          padding: 0px 10px 15px 15px;
+          font-size: 16px;
+          font-weight: 300;
+          margin-bottom: 25px;
+          height: 150px;
+        }
+        .page-btn:focus {
+          border: none !important;
+          outline: none;
+          box-shadow: 0 0 0;
+        }
+        .child_profile_info .page-btn {
+          position: relative;
+          top: -17px;
+        }
+        .personal-info {
+          display: flex;
+          display: -webkit-flex;
+          text-align: left;
+          overflow: hidden;
+        }
+        .red_moor_btn a {
+          display: inline-block;
+          background-color: #1771bf;
+          color: #fff;
+          font-weight: 600;
+          text-transform: capitalize;
+          padding: 3px 10px;
+          border-radius: 20px;
+          line-height: 24px;
+          padding-top: 0px;
+          font-size: 14px;
+          text-decoration: none;
+        }
+        .child_profile_info p {
+          margin-bottom: 2px;
+          line-height: 22px;
+          text-align: left;
+        }
+        #border-left {
+          position: relative;
+          margin-left: 20px;
+          padding-left: 20px;
+          color: #aeaeae;
+          font-weight: 300;
+          border-left: 1px solid #c6c6c6;
+        }
+        .personal-info.clearfix p {
+          font-weight: 400;
+        }
+        .personal-info h4 {
+          padding-top: 20px;
+          text-align: center !important;
+          display: block;
+          width: 100%;
+          font-size: 32px;
+          font-weight: 300;
+        }
+        .child_profile_info img {
+          width: 118%;
+          height: 100%;
+          position: relative;
+        }
+        .personal-info img {
+          position: absolute;
+          top: 0px;
+          left: 16px;
+          right: 0;
+          bottom: 0;
+          z-index: -1;
+          width: 395px;
+          height: 150px;
+          border-radius: 10px;
+        }
+        .personal-info-img {
+          position: relative;
+          z-index: 1;
+        }
+        .personal-info-img:after {
+          content: "";
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0px;
+          left: 0;
+          z-index: -1;
+          background-image: url(https://images.unsplash.com/photo-1473280025148-643f9b0cbac2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1510&q=80);
+          background-position: center;
+          background-color: #ddd;
+          background-size: cover;
+          background-repeat: no-repeat;
+          border-radius: 8px;
+        }
+        .child_profile_info a {
+            margin-top: 25px;
+        }
+/*       
+
+/*end single child*/
+
+/* INDEX PATNERS SECTION*/
+.children_slider {
+            position: relative;
+            margin-bottom: 85px; 
+        }
+.page_section_heading .section_title h4 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 45px;
+    padding-top: 0px;
+}
+.page_section_heading .section_title button {
+            padding: 10px 10px;
+            border-radius: 30px;
+            margin-bottom: 8px;
+            margin-top: 25px;
+            background-color: #2682ce;
+            border: none;
+            box-shadow: 0 0 0;
+            cursor: text !important;
+        }
+.page_section_heading .section_title {
+            font-weight: 400;
+            color: #404040;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+.children_slider .owl-nav button {
+            position: absolute;
+            top: 50%;
+            margin-top: -20px;
+            border: 1px solid #2682ce !important;
+            display: block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: #2682ce !important;
+            transition: all .3s ease-in-out;
+            -webkit-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            -ms-transition: all .3s ease-in-out;
+            outline: none;
+            line-height: 42px !important;
+        }
+        .children_slider .owl-nav button.owl-prev {
+            left: -5%;
+            display: block;
+        }
+        .children_slider .owl-nav button .fa {
+            font-size: 20px;
+            line-height: 38px;
+        }
+        .children_slider .owl-nav button.owl-prev .fa {
+            padding-right: 4px;
+        }
+        .children_slider .owl-nav button.owl-next .fa {
+            padding-left: 4px;
+        }
+        .children_slider .owl-nav button:hover {
+            background-color: #2682ce !important;
+            color: #fff !important;
+        }
+        .children_slider .owl-nav button.owl-next {
+            left: auto;
+            right: -5%;
+        }
+        @media only screen and (max-width: 500px) {
+            .children_slider .owl-nav button.owl-next {
+                right: 0;
+            }
+            .children_slider .owl-nav button.owl-prev {
+                left: 0;
+            }
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 991px){
+            .child_profile img {
+                width: 160px;
+                height: 160px;
+            }
+        }
+        @media only screen and (max-width: 767px){
+            .child_profile {
+                margin-bottom: 40px;
+            }
+        }
+/* END INDEX PATNERS SECTION*/
+
+
+
 /**Footer css start**/
 footer{
     border-top: 3px solid #df203a;

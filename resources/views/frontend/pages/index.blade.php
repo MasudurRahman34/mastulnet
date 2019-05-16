@@ -1,10 +1,12 @@
 @extends('frontend.layouts.master')
 
 @section('content')
-<link href="{{asset('css/owl.carousel.min.css')}}" rel="stylesheet" />
+<link rel="stylesheet" href="https://allyoucan.cloud/cdn/fontawesome/5.6.3/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 <div class="header_banner">
     <div class="container">
-        <h1 class="text-center lgt ">Become a <span class="clr_red typewrite" data-period="500" data-type='[ "Sponsor", "Volunteer", "Member" ]'></span></h1>
+        <h1 class="lgt ">Become a <span class="clr_red typewrite" data-period="500" data-type='[ "Sponsor", "Volunteer", "Member" ]'></span></h1>
         <span class="wrap"></span>
     </div>
 </div>
@@ -134,103 +136,92 @@
                 </div>
             </div>
         </div>
-        <div class="emergency_article">
+      <div style="margin-top:20px"></div>
+        <div class="page_section_heading  bg_grey">
             <div class="container">
-                <h1 class="lgt text-center">Our patners</h1>
-                <div class="owl-carousel owl-theme">
-                    <div class="ml-2 mr-2">
-                        <a href="#">
-                            <div class="article2 border_rad_5">
-                                <img src="images/article_1.jpg" alt="img">
-                                <div class="article_details2 bg_white">
-                                    <h3 class="font_s_20">What is Graphic Design</h3>
-                                </div>
-                            </div>
-                        </a>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="section_title">
+                            <button class="text-uppercase btn btn-primary"><h4>OUR SUPPORTERS</h4></button>
+                        </div>
                     </div>
-                    <div class="ml-2 mr-2">
-                        <a href="#">
-                            <div class="article2 border_rad_5">
-                                <img src="images/article_1.jpg" alt="img">
-                                <div class="article_details2 bg_white">
-                                    <h3 class="font_s_20">What is Graphic Design</h3>
-                                   
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="children_slider  bg_grey">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="children_slider owl-carousel">
+                            <div class="single_children_item text-center">
+                                <div class="children_carousel_img">
+                                    <img src="https://cdn.pixabay.com/photo/2015/08/10/19/08/portrait-883005_960_720.jpg" width="200" height="200" alt="Carousel_Images">
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                     <div class="ml-2 mr-2">
-                        <a href="#">
-                            <div class="article2 border_rad_5">
-                                <img src="images/article_1.jpg" alt="img">
-                                <div class="article_details2 bg_white">
-                                    <h3 class="font_s_20">What is Graphic Design</h3>
-                                  
+                            <div class="single_children_item text-center">
+                                <div class="children_carousel_img">
+                                    <img src="https://images.unsplash.com/photo-1473280025148-643f9b0cbac2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1510&q=80" width="200" height="200" alt="Carousel_Images">
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                     <div class="ml-2 mr-2">
-                        <a href="#">
-                            <div class="article2 border_rad_5">
-                                <img src="images/article_1.jpg" alt="img">
-                                <div class="article_details2 bg_white">
-                                    <h3 class="font_s_20">What is Graphic Design</h3>
-                                  
+                            <div class="single_children_item text-center">
+                                <div class="children_carousel_img">
+                                    <img src="images/article_1.jpg" width="200" height="200" alt="Carousel_Images">
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                     <div class="ml-2 mr-2">
-                        <a href="#">
-                            <div class="article2 border_rad_5">
-                                <img src="images/article_1.jpg" alt="img">
-                                <div class="article_details2 bg_white">
-                                    <h3 class="font_s_20">What is Graphic Design</h3>
-                                   
+                            <div class="single_children_item text-center">
+                                <div class="children_carousel_img">
+                                    <img src="https://cdn.pixabay.com/photo/2015/08/10/19/08/portrait-883005_960_720.jpg" width="200" height="200" alt="Carousel_Images">
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                     <div class="ml-2 mr-2">
-                        <a href="#">
-                            <div class="article2 border_rad_5">
-                                <img src="images/article_1.jpg" alt="img">
-                                <div class="article_details2 bg_white">
-                                    <h3 class="font_s_20">What is Graphic Design</h3>
-                                    
+                            <div class="single_children_item text-center">
+                                <div class="children_carousel_img">
+                                    <img src="images/article_3.jpg" width="200" height="200" alt="Carousel_Images">
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                     <div class="ml-2 mr-2">
-                        <a href="#">
-                            <div class="article2 border_rad_5">
-                                <img src="images/article_1.jpg" alt="img">
-                                <div class="article_details2 bg_white">
-                                    <h3 class="font_s_20">What is Graphic Design</h3>
-                                   
+                            <div class="single_children_item text-center">
+                                <div class="children_carousel_img">
+                                    <img src="images/article_1.jpg" width="200" height="200" alt="Carousel_Images">
                                 </div>
+                                
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
 
-        <script src=" {{asset('js/jquery.min.js') }}"></script>
-        <script src="{{ asset('js/owl.carousel.min.js')}}"></script>
+        <script src="https://allyoucan.cloud/cdn/jquery/core/3.4.1/jquery.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
         <script>
-            var owl = $('.owl-carousel');
-            owl.owlCarousel({
-                items:5,
-                loop:true,
-                margin:10,
-                autoplay:true,
-                autoplayTimeout:1000,
-                autoplayHoverPause:true
+                jQuery(document).ready(function(){
+                $('.owl-carousel').owlCarousel({
+                    nav: true,
+                    navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+                    dots:false,
+                    loop:true,
+                    margin:10,
+                    // center: true,
+                    animateOut: 'fadeOut',
+                    autoplay:true,
+                    autoplayTimeout:3000,
+                    autoplayHoverPause:false,
+                    smartSpeed: 1000,
+                    responsiveClass:true,
+                    responsive:{
+                        0:{
+                            items:1
+                        },
+                        600:{
+                            items:3
+                        },
+                        1000:{
+                            items:5
+                        }
+                    }
+                })
             });
-
         </script>
         @endsection

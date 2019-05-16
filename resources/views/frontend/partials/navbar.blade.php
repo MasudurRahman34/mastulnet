@@ -1,4 +1,4 @@
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default" style="padding-bottom:5px;">
                     <div class="container">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -79,7 +79,7 @@
 
                             @guest
 
-                             <button class="btn_cus join_us clr_white bg_red border_none border_circle bold text-uppercase full_width_480" data-toggle="modal" data-target=".bs-example-modal-lg">Join Now</button>
+                             <button class="btn_cus join_us clr_white bg_red border_none border_circle bold text-uppercase full_width_480" data-toggle="modal" data-target=".bs-example-modal-lg">Donate Now</button>
                             @endguest
                             </div>
                         </div>
